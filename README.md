@@ -9,7 +9,7 @@ This algorithm uses python3 and pip to install needed packages. It is a good ide
 	- The next two are *availability.csv* and *preferred.csv*, which correspond respectively to the availability and preferred slots when2meet polls. Navigate to each when2meet site, open the JS console with inspect element, and copy/run the scraping code found in `when2meet_scraping/scrape_confpref.js`. Take the terminal csv output, and copy it into the respective file in `input_csvs`.
 	- **Important:** you need to ensure these scraped files are parsed correctly. Go through the header (first row in the csv file) and ensure that tutors names line up *exactly* with their names in the google form. The formula is: first letter in name capitalized, and the rest lowercase, and only first name unless there are two people with that first name, in which case keep last name with same format as first. **Also, duplicates need to be handled.** If a tutor entered data more than once, change their header name in unneeded columns to a dummy name like "dummy". Follow the existing files' example.
 3. Now you are ready to run the algorithm. (This will pip install some things as listed in the next script. If you don't want this, install them locally or use virtualenv.) Execute this script to install dependencies and run the algorithm:
-	- `bash sa.sh` 
+	- `bash sa.sh` (you may need to make this executable)
 	- You should see terminal output confirming the annealing has started
 4. Once the algorithm has finished, it will write all data to [this google sheet](https://docs.google.com/spreadsheets/d/16LX0Z_ugOk2yL60qDWnNC1lI7wpbAlarZgeLVsJyGL8/edit?usp=sharing).
 	- If you need access to this sheet, ask Cosmos.
