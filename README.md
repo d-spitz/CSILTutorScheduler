@@ -25,3 +25,5 @@ Thanks!
 
 ## Future work
 Future work on this project could include making this into a fully-functional webapp to avoid any manual pasting of files or scraping schedule data. Schedules could be visualized more powerfully than they are in google sheets. The algorithm could be easier to customize with sliders relating to weights, or easier comparison of different runs. Lastly the runtime could use improvement by perhaps coding this in a faster language than python.
+
+Credit to [this developer](https://github.com/perrygeo) for implementing the simulated annealing package [simanneal](https://github.com/perrygeo/simanneal) used in this project.
