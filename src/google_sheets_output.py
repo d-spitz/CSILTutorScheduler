@@ -148,9 +148,10 @@ def write_state_to_sheet(state, csil_tutors_info):
     days_sheets = [format_one_days_schedule(
         state, csil_tutors_info, d) for d in range(7)]
 
+    # ensure that your gspread api credentials are in keys/service_acount.json
     gc = gspread.service_account(
-        filename="keys/KEYFILENAMEHERE.json")
-    sh = gc.open("CSIL Auto Generated Weekly Tutor Schedule")
+        filename="keys/service_account.json")
+    sh = gc.open("Auto Generated Weekly Tutor Schedule")
     ws = sh.worksheets()
 
     clear_sheets(ws)
