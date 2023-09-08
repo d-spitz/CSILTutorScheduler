@@ -23,7 +23,7 @@ This algorithm uses python3 and pip to install needed packages. It is a good ide
 
 ## Tweaking parameters to achieve better results
 
-- Annealing parameters can be tweaked in `annealing_params.py`
+- Annealing parameters can be tweaked in `src/annealing_params.py`
 - The weighting of different factors can be edited in `src/weights.py`.
 - Changing overall CSIL rules like minimum number of tutors on shift can be found in `src/const_csil_params.py`
 - Of course, the input data can be changed as well, like the number of hours a tutor should work.
